@@ -10,8 +10,8 @@ $(function () { // wait for document ready
         .setTween(tween)
         //.setPin("#title", { pushFollowers: false })
         .addTo(controller);
-    
-    
+
+
 
 });
 $(function () { // wait for document ready
@@ -19,14 +19,14 @@ $(function () { // wait for document ready
     var controller1 = new ScrollMagic.Controller();
 
     // build tween
-    var tween1 = TweenMax.to("#wow-gif", 0.5, { scale: 1.5, repeat: 5, yoyo: true });
+    var tween1 = TweenMax.to("#wow-gif", 0.5, { scale: 2, repeat: 5, yoyo: true });
 
     // build scene
     var scene = new ScrollMagic.Scene({ duration: "100%" })
         .setTween(tween1)
         .addTo(controller1);
-    
-    
+
+
 
 });
 $(function () { // wait for document ready
@@ -38,15 +38,30 @@ $(function () { // wait for document ready
     });
 
     // build tween
-    var tween = TweenMax.to("#igor-gif", 0.1, {rotation:360 });
+    var tween = TweenMax.to("#igor-gif", 0.1, { rotation: 360 });
 
     // build scene
     var scene = new ScrollMagic.Scene({ duration: 360, triggerElement: "#wow-gif" })
         .setTween(tween)
         .addTo(controller);
-    
-    
 
+
+
+});
+
+$(function () {
+    // init controller
+    var controller = new ScrollMagic.Controller();
+    // build tween
+    var tween = TweenMax.fromTo("#arrow", 1,
+        { left: -40 },
+        { left: 75, repeat: -1, yoyo: true, ease: Circ.easeInOut }
+    );
+
+    // build scene
+    var scene = new ScrollMagic.Scene({ duration: 700, offset: 100 })
+        .setTween(tween)
+        .addTo(controller);
 });
 
 
