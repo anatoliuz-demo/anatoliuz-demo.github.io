@@ -14,6 +14,9 @@
 </head>
 
 <body>
+  <!--
+    Следующий контейнер содержит в себе верстку по Bootstrap 4 и анимированное описание команды
+   -->
   <div class="container">
     <div class="row"></div>
     <div class="row mt-5">
@@ -21,6 +24,10 @@
       </div>
 
       <div class="col-sm-8">
+        <!-- 
+          Для текста в самом модном стиле Wordart нужно использовать css класс wordart 
+          и css класс с уже нужным стилем (tilt, italic, и тд)
+        -->
         <div class="wordart tilt">
           <div class="wordart tilt-color">
             <h2 class="text display-2">Ууух, ДА ЭТО ЖЕ</h2>
@@ -33,10 +40,13 @@
 
 
       </div>
-      <div class="col-sm"></div>
+      <div class="col-sm">
+      </div>
     </div>
     <div class="row">
-      <div class="col-sm-6"></div>
+      <div class="col-sm-6">
+
+      </div>
       <div class="col-sm-6">
         <div class="wordart italic-outline">
           <p class="text">Команда профессионалов!</h2>
@@ -44,46 +54,119 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-12">
-        <div class="wordart-small slate">
+      <div class="col-sm-5">
+        <div style="width:100%;height:0;padding-bottom:56%;position:relative;">
+          <iframe src="https://giphy.com/embed/l3vR7aXoQX0OdHi48" width="100%" height="100%" style="position:absolute" frameBorder="0"
+            class="giphy-embed" allowFullScreen></iframe>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <img src="Left-arrow.jpg" width="75%" style="margin-top: 2.5em">
+      </div>
+      <div class="col-sm">
+        <div class="wordart-small">
+          <p class="text" style="margin-top: 2.5em">
+            Когда взял Le Vidor на хакатон
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="wordart-small top slate">
           <p class="text">На хакатон выделили время три senior специалиста в UI, Back-end и Front-End:</p>
+        </div>
+
+      </div>
+      <div class="col-sm-4">
+        <div id="wow-gif" style="width:60%;height:0;padding-bottom:60%;position:relative;">
+          <iframe src="https://giphy.com/embed/26ufdipQqU2lhNA4g" width="100%" height="100%" style="position:absolute" frameBorder="0"
+            class="giphy-embed" allowFullScreen></iframe>
         </div>
 
       </div>
     </div>
   </div>
-    <section class="panel blue">
-      <div class="wordart-small slate" id="IgorName">
-        <p class="text">Игорь!</p>
+  <!--
+    Следующий контейнер используется для презентации команды, у него другой id из-за 
+    специфического JS фреймворка, который мы используем для анимаций.
+    Каждый слайд должен находиться в отдельном таге <section class="panel"></section>,
+    Верстка внутри слайда может быть произвольной.
+  -->
+  <div id="slidesContainer" class="container">
+    <section class="panel first">
+      <div class="row">
+        <div class="col-sm-5">
+          <h3 class="display-2">Игорь!</h3>
+
+          <div class="wordart-small top slate" id="IgorName">
+            <p>Он появился на этой Земле чтобы сыграть на басухе и выиграть хакатон! И на басухе он уже отыграл! </p>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div id="igor-gif" style="width:45%;height:0;padding-bottom:75%;position:relative;">
+            <iframe src="https://giphy.com/embed/ZCbYNoiRtWVdm" width="100%" height="100%" style="position:absolute" frameBorder="0"
+              class="giphy-embed" allowFullScreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="panel second">
+      <div class="row">
+        <div class="col-sm-5">
+          <h3 class="display-2">Елена!</h3>
+
+          <div class="wordart-small top slate" id="LenaName">
+            <p>Главный питониста нашей команды. Гвидо Ван Россум завидует, дата-саентисты желают встречи с богиней программирования
+            </p>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div id="lena-gif" style="width:45%;height:0;padding-bottom:56%;position:relative;">
+            <iframe src="https://giphy.com/embed/xARr00Vg43khG" width="100%" height="100%" style="position:absolute" frameBorder="0"
+              class="giphy-embed" allowFullScreen></iframe>
+          </div>
+          <p>
+        </div>
+      </div>
+    </section>
+    <section class="panel third">
+      <div class="row">
+        <div class="col-sm-5">
+          <h3 class="display-2">Миша!</h3>
+
+          <div class="wordart superhero rainbow" id="MishaName">
+            
+            <p class="text" >Человек-<span class="text">МЕМ</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div style="width:75%;height:0;padding-bottom:99%;position:relative;">
+            <iframe src="https://giphy.com/embed/39m67f635Guu8Xjy6C" width="100%" height="100%" style="position:absolute" frameBorder="0"
+              class="giphy-embed" allowFullScreen></iframe>
+          </div>
+          <p>
+        </div>
+      </div>
+    </section>
+    <section class="panel fourth">
+      <div class="wordart-small top slate" id="AnonymName">
+        <p class="text">Аноним!</p>
       </div>
 
     </section>
-    <section class="panel red">
-        <div class="wordart-small slate" id="LenaName">
-          <p class="text">Лена!</p>
-        </div>
-  
-      </section>
-      <section class="panel green">
-          <div class="wordart-small slate" id="LenaName">
-            <p class="text">Миша!</p>
-          </div>
-    
-        </section>
-        <section class="panel black">
-            <div class="wordart-small slate" id="LenaName">
-              <p class="text">Аноним!</p>
-            </div>
-      
-          </section>
-    
-  
+  </div>
+
 
 
 
   </div>
 
-
+  <!--
+    Подключаем либы для красивейших анимаций скроллинга
+  -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
 

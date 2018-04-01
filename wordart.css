@@ -9,26 +9,30 @@
     -moz-osx-font-smoothing: grayscale;
     
   }
+  #slidesContainer {
+      width: 100%;
+      height: 100%;
+  }
   .panel {
       height: 800px;
       width: 100%;
   }
-  .panel.red {
+  .panel.first {
       background-color: brown;
   }
-  .panel.blue {
+  .panel.second {
      background-color: blueviolet;
   }
-  .panel.green {
+  .panel.third {
     background-color: #BADA55;
  }
- .panel.black {
+ .panel.fourth {
     background-color: #2A1D32;
  }
 
   .wordart-small {
     font-family: Arial, sans-serif;
-    font-size: 3em;
+    font-size: 1.5em;
     font-weight: bold;
     position: relative;
     z-index: 1;
@@ -37,7 +41,9 @@
     -moz-osx-font-smoothing: grayscale;
     
     }
-
+    .wordart-small.top {
+        margin-top: 5em;
+    }
     .margin-row {
         margin-top: 1em;
     }
@@ -63,6 +69,7 @@
     -o-transform: scale(1, 1.5);
     -ms-transform: scale(1, 1.5);
   }
+  
   
   .rainbow .text {
     font-family: Impact;
