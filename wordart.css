@@ -3,6 +3,9 @@ html {
     height: 100%
 }
 
+.container {
+    height: 100%;
+}
 
 .wordart {
     font-family: Arial, sans-serif;
