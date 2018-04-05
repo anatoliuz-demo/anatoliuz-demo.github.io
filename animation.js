@@ -83,9 +83,9 @@ $(function () { // wait for document ready
 
     // define movement of panels
     var wipeAnimation = new TimelineMax()
-        .fromTo("section.panel.second", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
+        .fromTo("section.panel.second", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
         .fromTo("section.panel.third",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
-        .fromTo("section.panel.fourth", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
+        .fromTo("section.panel.fourth", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone}); // in from top
 
     // create scene to pin and link animation
     new ScrollMagic.Scene({
