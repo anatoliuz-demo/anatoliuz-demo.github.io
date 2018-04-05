@@ -11,9 +11,8 @@ $(function () { // wait for document ready
         //.setPin("#title", { pushFollowers: false })
         .addTo(controller);
 
-
-
 });
+
 $(function () { // wait for document ready
     // init controller
     var controller1 = new ScrollMagic.Controller();
@@ -26,9 +25,8 @@ $(function () { // wait for document ready
         .setTween(tween1)
         .addTo(controller1);
 
-
-
 });
+
 $(function () { // wait for document ready
     // init controller
     var controller = new ScrollMagic.Controller({
@@ -45,7 +43,21 @@ $(function () { // wait for document ready
         .setTween(tween)
         .addTo(controller);
 
+    // build tween
+    var tween = TweenMax.to("#lena-gif", 0.1, { rotation: 360 });
 
+    // build scene
+    var scene = new ScrollMagic.Scene({ duration: 360, triggerElement: "#igor-gif" })
+        .setTween(tween)
+        .addTo(controller);
+
+    // build tween
+    var tween = TweenMax.to("#misha-gif", 0.1, { rotation: 360 });
+
+    // build scene
+    var scene = new ScrollMagic.Scene({ duration: 360, triggerElement: "#lena-gif" })
+        .setTween(tween)
+        .addTo(controller);
 
 });
 
@@ -65,27 +77,23 @@ $(function () {
 });
 
 
-
-
-/*
 $(function () { // wait for document ready
     // init
-    var controller = new ScrollMagic.Controller({
-        globalSceneOptions: {
-            triggerHook: 'onLeave'
-        }
-    });
+    var controller = new ScrollMagic.Controller();
 
-    // get all slides
-    var slides = document.querySelectorAll("section.panel");
+    // define movement of panels
+    var wipeAnimation = new TimelineMax()
+        .fromTo("section.panel.second", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
+        .fromTo("section.panel.third",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
+        .fromTo("section.panel.fourth", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
 
-    // create scene for every slide
-    for (var i = 0; i < slides.length; i++) {
-        new ScrollMagic.Scene({
-            triggerElement: slides[i]
+    // create scene to pin and link animation
+    new ScrollMagic.Scene({
+            triggerElement: "#slidesContainer",
+            triggerHook: 0,
+            duration: "300%"
         })
-            .setPin(slides[i])
-            .addTo(controller);
-    }
+        .setPin("#slidesContainer")
+        .setTween(wipeAnimation)
+        .addTo(controller);
 });
-*/
