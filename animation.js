@@ -31,39 +31,41 @@ $(function () { // wait for document ready
     // init controller
     var controller = new ScrollMagic.Controller({
         globalSceneOptions: {
-            triggerHook: "onLeave"
+            triggerHook: "onEnter"
         }
     });
+
+    var windowHeight = $(window).height();
 
     // build tween
     var tween = TweenMax.to("#igor-gif", 0.1, { rotation: 360 });
 
     // build scene
-    var scene = new ScrollMagic.Scene({ duration: 900, triggerElement: "#top" })
+    var scene = new ScrollMagic.Scene({ duration: windowHeight, triggerElement: "#slidesContainer" })
         .setTween(tween)
         .addTo(controller);
 
     // build tween
-    var tween = TweenMax.to("#lena-gif", 0.1, { rotation: 1440 });
+    var tween = TweenMax.to("#lena-gif", 0.1, { rotation: 360 * 7 });
 
     // build scene
-    var scene = new ScrollMagic.Scene({ duration: 800, triggerElement: "#wow-gif" })
+    var scene = new ScrollMagic.Scene({ duration: windowHeight * 2, triggerElement: "#slidesContainer" })
         .setTween(tween)
         .addTo(controller);
 
     // build tween
-    var tween = TweenMax.to("#misha-gif", 0.1, { rotation: 1800 });
+    var tween = TweenMax.to("#misha-gif", 0.1, { rotation: 360 * 10 });
 
     // build scene
-    var scene = new ScrollMagic.Scene({ duration: 1700, triggerElement: "#wow-gif" })
+    var scene = new ScrollMagic.Scene({ duration: windowHeight * 3, triggerElement: "#slidesContainer" })
         .setTween(tween)
         .addTo(controller);
 
     // build tween
-    var tween = TweenMax.to("#sasha-gif", 0.1, { rotation: 2880 });
+    var tween = TweenMax.to("#sasha-gif", 0.1, { rotation: 360 * 12 });
 
     // build scene
-    var scene = new ScrollMagic.Scene({ duration: 2300, triggerElement: "#wow-gif" })
+    var scene = new ScrollMagic.Scene({ duration: windowHeight * 4, triggerElement: "#slidesContainer" })
         .setTween(tween)
         .addTo(controller);
 
