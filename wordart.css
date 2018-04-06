@@ -16,7 +16,7 @@ html {
     display: inline-block;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    
+
 }
 
 #slidesContainer {
@@ -44,7 +44,7 @@ background-color: #BADA55;
 }
 
 .panel.fourth {
-background-color: #2A1D32;
+background-color: #3399ff;
 }
 
 .wordart-small {
@@ -91,11 +91,11 @@ background-color: #2A1D32;
 .rainbow .text {
     font-family: Impact;
 
-    background: red; 
+    background: red;
     background: -webkit-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
     background: -o-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
     background: -moz-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
-    background: linear-gradient(to right, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af); 
+    background: linear-gradient(to right, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
