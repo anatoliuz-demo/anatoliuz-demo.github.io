@@ -23,11 +23,11 @@
       <div class="col-sm">
       </div>
       <div class="col-sm-8">
-        <!-- 
-          Для текста в самом модном стиле Wordart нужно использовать css класс wordart 
+        <!--
+          Для текста в самом модном стиле Wordart нужно использовать css класс wordart
           и css класс с уже нужным стилем (tilt, italic, и тд)
         -->
-        <div class="wordart tilt">
+        <div class="wordart tilt" id="top">
           <div class="wordart tilt-color">
             <h2 class="text display-2">Ууух, ДА ЭТО ЖЕ</h2>
             <h2 class="text display-2"></h2>
@@ -82,7 +82,7 @@
     </div>
   </div>
   <!--
-    Следующий контейнер используется для презентации команды, у него другой id из-за 
+    Следующий контейнер используется для презентации команды, у него другой id из-за
     специфического JS фреймворка, который мы используем для анимаций.
     Каждый слайд должен находиться в отдельном таге <section class="panel"></section>,
     Верстка внутри слайда может быть произвольной.
@@ -103,6 +103,7 @@
               class="giphy-embed" allowFullScreen></iframe>
           </div>
         </div>
+        <div id="lala" class="col-sm-1"></div>
       </div>
     </section>
     <section class="panel second">
@@ -143,9 +144,24 @@
       </div>
     </section>
     <section class="panel fourth">
-      <div class="wordart-small top slate" id="AnonymName">
-        <p class="text">Аноним!</p>
+      <div class="row">
+        <div class="col-sm-5">
+          <h3 class="display-2">Саша!</h3>
+          <div class="wordart-small top slate" id="SashaName">
+            <p>
+                Первый день в вэбчике. Этот парень себя еще проявит.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div id="sasha-gif" style="width:75%;height:0;padding-bottom:99%;position:relative;">
+            <iframe src="https://giphy.com/embed/6UEIBfV1X0NRm" width="100%" height="100%" style="position:absolute" frameBorder="0"
+              class="giphy-embed" allowFullScreen></iframe>
+          </div>
+          <p>
+        </div>
       </div>
+    </section>
   </div>
 
   <!--

@@ -39,23 +39,31 @@ $(function () { // wait for document ready
     var tween = TweenMax.to("#igor-gif", 0.1, { rotation: 360 });
 
     // build scene
-    var scene = new ScrollMagic.Scene({ duration: 360, triggerElement: "#wow-gif" })
+    var scene = new ScrollMagic.Scene({ duration: 900, triggerElement: "#top" })
         .setTween(tween)
         .addTo(controller);
 
     // build tween
-    var tween = TweenMax.to("#lena-gif", 0.1, { rotation: 360 });
+    var tween = TweenMax.to("#lena-gif", 0.1, { rotation: 1440 });
 
     // build scene
-    var scene = new ScrollMagic.Scene({ duration: 360, triggerElement: "#igor-gif" })
+    var scene = new ScrollMagic.Scene({ duration: 800, triggerElement: "#wow-gif" })
         .setTween(tween)
         .addTo(controller);
 
     // build tween
-    var tween = TweenMax.to("#misha-gif", 0.1, { rotation: 360 });
+    var tween = TweenMax.to("#misha-gif", 0.1, { rotation: 1800 });
 
     // build scene
-    var scene = new ScrollMagic.Scene({ duration: 360, triggerElement: "#lena-gif" })
+    var scene = new ScrollMagic.Scene({ duration: 1700, triggerElement: "#wow-gif" })
+        .setTween(tween)
+        .addTo(controller);
+
+    // build tween
+    var tween = TweenMax.to("#sasha-gif", 0.1, { rotation: 2901 });
+
+    // build scene
+    var scene = new ScrollMagic.Scene({ duration: 2700, triggerElement: "#wow-gif" })
         .setTween(tween)
         .addTo(controller);
 
