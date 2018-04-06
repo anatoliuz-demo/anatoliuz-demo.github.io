@@ -60,10 +60,10 @@ $(function () { // wait for document ready
         .addTo(controller);
 
     // build tween
-    var tween = TweenMax.to("#sasha-gif", 0.1, { rotation: 2901 });
+    var tween = TweenMax.to("#sasha-gif", 0.1, { rotation: 2880 });
 
     // build scene
-    var scene = new ScrollMagic.Scene({ duration: 2700, triggerElement: "#wow-gif" })
+    var scene = new ScrollMagic.Scene({ duration: 2300, triggerElement: "#wow-gif" })
         .setTween(tween)
         .addTo(controller);
 
