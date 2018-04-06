@@ -18,7 +18,7 @@ $(function () { // wait for document ready
     var controller1 = new ScrollMagic.Controller();
 
     // build tween
-    var tween1 = TweenMax.to("#wow-gif", 0.5, { scale: 2, repeat: 5, yoyo: true });
+    var tween1 = TweenMax.to("#wow-gif", 0.5, { scale: 1.5, repeat: 5, yoyo: true });
 
     // build scene
     var scene = new ScrollMagic.Scene({ duration: "100%" })
