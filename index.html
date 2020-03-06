@@ -9,161 +9,33 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-  <title>Levidor!11</title>
-  <link rel="stylesheet" href="../RTC/socportal/static/css/css-redefinition.css">
+  <title>anatoliuz</title>
 
 </head>
 
-<body>
+<body style="background-color: black;">
   <!--
     Следующий контейнер содержит в себе верстку по Bootstrap 4 и анимированное описание команды
    -->
   <div class="container mainPage">
     <div class="row"></div>
     <div class="row mt-5">
-      <div class="col-md">
-      </div>
       <div class="col-md-8">
         <!--
           Для текста в самом модном стиле Wordart нужно использовать css класс wordart
           и css класс с уже нужным стилем (tilt, italic, и тд)
         -->
-        <div class="wordart tilt" id="top">
-          <div class="wordart tilt-color">
-            <h2 class="text display-2">Ууух, ДА ЭТО ЖЕ</h2>
-            <h2 class="text display-2"></h2>
+        <div class="wordart superhero rainbow" style="margin-top: 15%;">
+            <img src="tolyan.png" height="400px">
+            <h2 class="text display-1" style="color: yellow!important">anatoliuz</h2>
           </div>
+          </div>
+        <div class="col-md-4">
+            <iframe style="margin-top: 15%;" width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1005488371&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
         </div>
-        <div class="wordart superhero rainbow" id="title">
-          <h2 class="text display-1">Le Vidor</h2>
-        </div>
-      </div>
-      <div class="col-md">
+  
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-6">
-      </div>
-      <div class="col-md-6">
-        <div class="wordart italic-outline">
-          <h2 class="text">Команда профессионалов!</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-5">
-        <div style="width:100%;height:0;padding-bottom:56%;position:relative;">
-          <iframe src="https://giphy.com/embed/l3vR7aXoQX0OdHi48" width="100%" height="100%" style="position:absolute; pointer-events: none" frameBorder="0"
-            class="giphy-embed" allowFullScreen></iframe>
-        </div>
-      </div>
-      <div class="col-3" id="arrow">
-        <img  src="Left-arrow.jpg" width="75%" style="margin-top: 2.5em">
-      </div>
-      <div class="col-4">
-        <div class="wordart-small">
-          <p class="text" style="margin-top: 2.5em">
-            Когда взял Le Vidor на хакатон
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4 order-md-2">
-        <div id="wow-gif" style="width:60%;height:0;padding-bottom:60%;position:relative;">
-          <iframe src="https://giphy.com/embed/26ufdipQqU2lhNA4g" width="100%" height="100%" style="position:absolute; pointer-events: none" frameBorder="0"
-            class="giphy-embed" allowFullScreen></iframe>
-        </div>
-      </div>
-      <div class="col-md-8 order-md-1">
-        <div class="wordart-small top slate">
-          <p class="text">На хакатон выделили время четыре senior специалиста в UI, Back-end и Front-End:</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--
-    Следующий контейнер используется для презентации команды, у него другой id из-за
-    специфического JS фреймворка, который мы используем для анимаций.
-    Каждый слайд должен находиться в отдельном таге <section class="panel"></section>,
-    Верстка внутри слайда может быть произвольной.
-  -->
-  <div id="slidesContainer">
-    <section class="panel first">
-      <div class="row">
-        <div class="col-md-5">
-          <h3 class="display-2">Игорь!</h3>
-
-          <div class="wordart-small top slate" id="IgorName">
-            <p>Он появился на этой Земле чтобы сыграть на басухе и выиграть хакатон! И на басухе он уже отыграл! </p>
-          </div>
-        </div>
-        <div class="col-md">
-          <div id="igor-gif" style="width:45%;height:0;padding-bottom:75%;position:relative;">
-            <iframe src="https://giphy.com/embed/ZCbYNoiRtWVdm" width="100%" height="100%" style="position:absolute; pointer-events: none" frameBorder="0"
-              class="giphy-embed" allowFullScreen></iframe>
-          </div>
-        </div>
-        <div class="col-md-1"></div>
-      </div>
-    </section>
-    <section class="panel second">
-      <div class="row">
-        <div class="col-md-5">
-          <h3 class="display-2">Елена!</h3>
-
-          <div class="wordart-small top slate" id="LenaName">
-            <p>Главный питониста нашей команды. Гвидо Ван Россум завидует, дата-саентисты желают встречи с богиней программирования
-            </p>
-          </div>
-        </div>
-        <div class="col-md">
-          <div id="lena-gif" style="width:45%;height:0;padding-bottom:56%;position:relative;">
-            <iframe src="https://giphy.com/embed/xARr00Vg43khG" width="100%" height="100%" style="position:absolute; pointer-events: none" frameBorder="0"
-              class="giphy-embed" allowFullScreen></iframe>
-          </div>
-          <p>
-        </div>
-      </div>
-    </section>
-    <section class="panel third">
-      <div class="row">
-        <div class="col-md-5">
-          <h3 class="display-2">Миша!</h3>
-
-          <div class="wordart superhero rainbow" id="MishaName">
-            <p class="text" >Человек-<span class="text">МЕМ</span></p>
-          </div>
-        </div>
-        <div class="col-md">
-          <div id="misha-gif" style="width:75%;height:0;padding-bottom:99%;position:relative;">
-            <iframe src="https://giphy.com/embed/39m67f635Guu8Xjy6C" width="100%" height="100%" style="position:absolute; pointer-events: none" frameBorder="0"
-              class="giphy-embed" allowFullScreen></iframe>
-          </div>
-          <p>
-        </div>
-      </div>
-    </section>
-    <section class="panel fourth">
-      <div class="row">
-        <div class="col-md-5">
-          <h3 class="display-2">Саша!</h3>
-          <div class="wordart-small top slate" id="SashaName">
-            <p>
-                Первый день в вэбчике. Этот парень себя еще проявит.
-            </p>
-          </div>
-        </div>
-        <div class="col-md">
-          <div id="sasha-gif" style="width:75%;height:0;padding-bottom:99%;position:relative;">
-            <iframe src="https://giphy.com/embed/6UEIBfV1X0NRm" width="100%" height="100%" style="position:absolute; pointer-events: none" frameBorder="0"
-              class="giphy-embed" allowFullScreen></iframe>
-          </div>
-          <p>
-        </div>
-      </div>
-    </section>
-  </div>
 
   <!--
     Подключаем либы для красивейших анимаций скроллинга
